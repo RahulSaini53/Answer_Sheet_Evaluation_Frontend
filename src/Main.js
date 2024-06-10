@@ -62,7 +62,7 @@ export default function Main(){
         }
 
         const fetchData = async (formdata) => {
-            const url='https://project-backend5-672ed2a9791e.herokuapp.com/ExtendedDataprocessapi/'
+            const url='https://project-backend5-672ed2a9791e.herokuapp.com/ExtendedDataprocessapi'
             const options={
                 method:'POST',
                 body:formdata
