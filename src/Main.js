@@ -145,7 +145,7 @@ export default function Main(){
                     </div>
                      } 
                     <div className="flex justify-between space-x-3 w-[35vw]">
-                      <label className="text-red-500 text-lg">Question (optional):</label>
+                      <label className="text-red-500 text-lg">Question:(optional)</label>
                       <textarea name="question" id="question" value={question} placeholder="enter question here" rows="5" cols={60} className="px-2 py-1 outline-orange-400 rounded-lg" onChange={(e)=>setQuestion(e.target.value)}></textarea>
                     </div>
                     <div className="flex justify-between space-x-3 w-[35vw]">
