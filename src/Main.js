@@ -145,12 +145,12 @@ export default function Main(){
                     </div>
                      } 
                     <div className="flex justify-between space-x-3 w-[35vw]">
-                      <label className="text-red-500 text-lg">Question: </label>
+                      <label className="text-red-500 text-lg">Question (optional):</label>
                       <textarea name="question" id="question" value={question} placeholder="enter question here" rows="5" cols={60} className="px-2 py-1 outline-orange-400 rounded-lg" onChange={(e)=>setQuestion(e.target.value)}></textarea>
                     </div>
                     <div className="flex justify-between space-x-3 w-[35vw]">
                       <label className="text-red-500 text-lg">Solution: </label>
-                      <textarea name="solution" id="solution" value={Solution} placeholder="enter question here" rows="7" cols={60} className="px-2 py-1 outline-orange-400 rounded-lg" onChange={(e)=>setSolution(e.target.value)} onClick={()=>setWarning(false)}></textarea>
+                      <textarea name="solution" id="solution" value={Solution} placeholder="enter solution here" rows="7" cols={60} className="px-2 py-1 outline-orange-400 rounded-lg" onChange={(e)=>setSolution(e.target.value)} onClick={()=>setWarning(false)}></textarea>
                     </div>
 
                     <div className="">
@@ -162,7 +162,7 @@ export default function Main(){
 
                     <div className="flex justify-start space-x-3 w-[40vw]">
                       <label className="text-red-500 text-lg">Your Answer: </label>
-                      <textarea name="answer" id="answer" value={answer} placeholder="enter question here" rows="8" cols={60} className="px-2 py-1 outline-orange-400 rounded-lg" onChange={(e)=>setAnswer(e.target.value)} onClick={()=>{setWarning(false);setDuplicateWarning(false)}} ></textarea>
+                      <textarea name="answer" id="answer" value={answer} placeholder="enter answer here" rows="8" cols={60} className="px-2 py-1 outline-orange-400 rounded-lg" onChange={(e)=>setAnswer(e.target.value)} onClick={()=>{setWarning(false);setDuplicateWarning(false)}} ></textarea>
                     </div>
 
                     <div>
