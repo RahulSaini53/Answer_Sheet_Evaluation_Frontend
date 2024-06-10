@@ -19,35 +19,35 @@ export default function Main(){
         e.preventDefault()
         setResult('----')
 
-        // if(!Solution)
-        //  {
-        //     if(!solutionfile){
-        //         setDuplicateWarning(true)
-        //         return
-        //     }
-        // }
+        if(!Solution)
+         {
+            if(!solutionfile){
+                setDuplicateWarning(true)
+                return
+            }
+        }
 
-        // else{
-        //     if(!(!solutionfile)){
-        //         setDuplicateWarning(true)
-        //         return
-        //     }
+        else{
+            if(!(!solutionfile)){
+                setDuplicateWarning(true)
+                return
+            }
 
-        //  }
+         }
 
-        // if(!answer){
-        //     if(!myfile){
-        //         setDuplicateWarning(true)
-        //         return
-        //     }
-        // }
+        if(!answer){
+            if(!myfile){
+                setDuplicateWarning(true)
+                return
+            }
+        }
 
-        // else{
-        //     if(!(!myfile)){
-        //         setDuplicateWarning(true)
-        //         return
-        //     }
-        // }
+        else{
+            if(!(!myfile)){
+                setDuplicateWarning(true)
+                return
+            }
+        }
 
 
 
@@ -62,7 +62,7 @@ export default function Main(){
         }
 
         const fetchData = async (formdata) => {
-            const url='https://project-backend5-672ed2a9791e.herokuapp.com/'
+            const url='https://project-backend5-672ed2a9791e.herokuapp.com/ExtendedDataprocessapi/'
             const options={
                 method:'POST',
                 body:formdata
